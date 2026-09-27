@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CareerAI — AI-Powered Career Guidance for Indian Students</title>
+  <meta name="description" content="AI-powered career guidance for Indian students in Class 10, 11, 12. Explore NEET, JEE, MHT-CET, Science, Commerce, Arts, Engineering, and Medical pathways.">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Custom Design System -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==================== 1. NAVBAR ==================== -->
+  <header class="site-header">
+    <nav class="custom-navbar">
+      <a href="index.html" class="nav-brand">
+        <span class="brand-icon"><i class="bi bi-compass"></i></span>
+        <span>Career<span class="gradient-text">AI</span></span>
+      </a>
+
+      <!-- Pure CSS Mobile Hamburger Toggle (No JS) -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+        <i class="bi bi-list open-icon"></i>
+        <i class="bi bi-x-lg close-icon"></i>
+      </label>
+
+      <div class="nav-menu">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-item-link active">Home</a></li>
+          <li><a href="career-guidance.html" class="nav-item-link">Career Guidance</a></li>
+          <li><a href="neet.html" class="nav-item-link">Exams</a></li>
+          <li><a href="science.html" class="nav-item-link">Streams</a></li>
+          <li><a href="career-explorer.html" class="nav-item-link">Career Explorer</a></li>
+          <li><a href="ai-assessment.html" class="nav-item-link">AI Assessment</a></li>
+          <li><a href="resources.html" class="nav-item-link">Resources</a></li>
+          <li><a href="about.html" class="nav-item-link">About</a></li>
+        </ul>
+        <div class="nav-auth">
+          <a href="login.html" class="nav-login-btn">Login</a>
+          <a href="signup.html" class="nav-cta-btn">Get Started</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ==================== 2. HERO SECTION ==================== -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <!-- Left Hero Content -->
+        <div class="col-lg-6 anim-slide-up">
+          <div class="mb-3">
+            <span class="custom-badge">
+              <i class="bi bi-stars"></i> AI-POWERED CAREER GUIDANCE
+            </span>
+          </div>
+          <h1 class="hero-title">
+            Discover the Career That Fits Your <span class="gradient-text">Future</span>.
+          </h1>
+          <p class="hero-desc">
+            Explore career paths, entrance exams, and educational opportunities with a smarter way to understand your future.
+          </p>
+          <p class="hero-subdesc">
+            Whether you are preparing for NEET, JEE, MHT-CET or exploring Science, Commerce, and Arts after Class 10 or 12, CareerAI helps you make informed choices with complete clarity.
+          </p>
+          <div class="hero-buttons">
+            <a href="career-explorer.html" class="primary-btn">
+              <i class="bi bi-compass"></i> Explore Careers
+            </a>
+            <a href="ai-assessment.html" class="secondary-btn">
+              <i class="bi bi-cpu"></i> Take AI Career Assessment
+            </a>
+          </div>
+          <div class="hero-tags">
+            <span class="text-secondary fw-semibold">Popular Paths:</span>
+            <a href="neet.html" class="hero-tag-item">🩺 NEET Medical</a>
+            <a href="jee.html" class="hero-tag-item">⚡ JEE Engineering</a>
+            <a href="mhtcet.html" class="hero-tag-item">🎯 MHT-CET</a>
+            <a href="commerce.html" class="hero-tag-item">📈 Commerce & CA</a>
+          </div>
+        </div>
+
+        <!-- Right Hero Visual (Pure CSS AI Dashboard Graphic) -->
+        <div class="col-lg-6">
+          <div class="hero-visual-wrapper">
+            <div class="hero-glow"></div>
+
+            <!-- Floating Badge Top Right -->
+            <div class="floating-card-1 anim-float">
+              <div class="floating-icon-box" style="background: rgba(16, 185, 129, 0.12); color: #10B981;">
+                <i class="bi bi-check-circle-fill"></i>
+              </div>
+              <div>
+                <div style="font-size: 11px; text-transform: uppercase; font-weight: 700; color: var(--muted); letter-spacing: 0.05em;">Career Match</div>
+                <div style="font-size: 18px; font-weight: 800; color: var(--navy);">92% Fit</div>
+              </div>
+            </div>
+
+            <!-- Main AI Match Card -->
+            <div class="hero-main-card">
+              <div class="card-topbar">
+                <h3 class="card-topbar-title">
+                  <i class="bi bi-cpu-fill text-primary"></i> AI Career Match
+                </h3>
+                <span class="badge badge-green d-flex align-items-center gap-1">
+                  <span class="pulse-dot"></span> Live Model
+                </span>
+              </div>
+
+              <!-- Match Row 1 -->
+              <div class="match-metric-row">
+                <div class="match-label-row">
+                  <span>Medical & Healthcare</span>
+                  <span class="match-percent">92%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-bar-fill bg-grad-1" style="width: 92%;"></div>
+                </div>
+              </div>
+
+              <!-- Match Row 2 -->
+              <div class="match-metric-row">
+                <div class="match-label-row">
+                  <span>Engineering & Technology</span>
+                  <span class="match-percent">87%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-bar-fill bg-grad-2" style="width: 87%;"></div>
+                </div>
+              </div>
+
+              <!-- Match Row 3 -->
+              <div class="match-metric-row">
+                <div class="match-label-row">
+                  <span>Data Science & AI</span>
+                  <span class="match-percent">81%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-bar-fill bg-grad-3" style="width: 81%;"></div>
+                </div>
+              </div>
+
+              <!-- Match Row 4 -->
+              <div class="match-metric-row">
+                <div class="match-label-row">
+                  <span>Business & Finance</span>
+                  <span class="match-percent">76%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-bar-fill bg-grad-4" style="width: 76%;"></div>
+                </div>
+              </div>
+
+              <!-- Match Row 5 -->
+              <div class="match-metric-row">
+                <div class="match-label-row">
+                  <span>Design & Creative Media</span>
+                  <span class="match-percent">71%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-bar-fill bg-grad-5" style="width: 71%;"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Badge Bottom Left -->
+            <div class="floating-card-2 anim-float-delayed">
+              <div class="d-flex align-items-center gap-2 mb-1">
+                <i class="bi bi-lightbulb-fill text-warning"></i>
+                <span class="fw-bold" style="font-size: 13px; color: var(--navy);">AI Recommendation</span>
+              </div>
+              <p class="mb-0" style="font-size: 12.5px; color: var(--muted); line-height: 1.4;">
+                Your interests show strong alignment with analytical problem-solving and healthcare disciplines.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 3. STATISTICS SECTION ==================== -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-6 col-lg-3">
+          <div class="stat-card">
+            <div class="stat-number gradient-text">10,000+</div>
+            <div class="stat-label">Career Paths</div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="stat-card">
+            <div class="stat-number" style="color: var(--indigo);">50+</div>
+            <div class="stat-label">Career Domains</div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="stat-card">
+            <div class="stat-number" style="color: var(--blue);">25+</div>
+            <div class="stat-label">Entrance Exams</div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="stat-card">
+            <div class="stat-number" style="color: var(--cyan);">AI-Powered</div>
+            <div class="stat-label">Career Exploration</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 4. HOW CAREERAI WORKS ==================== -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="text-center section-header">
+        <span class="custom-badge"><i class="bi bi-diagram-3"></i> Process</span>
+        <h2 class="section-title mt-2">Your Career Journey, <span class="gradient-text">Simplified</span></h2>
+        <p class="section-subtitle">
+          From self-discovery to exam preparation and college planning, we guide you step-by-step toward the right career decision.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Step 1 -->
+        <div class="col-md-4">
+          <div class="step-card">
+            <span class="step-number-badge">Step 01</span>
+            <div class="card-icon-lg">
+              <i class="bi bi-person-bounding-box"></i>
+            </div>
+            <h3 class="card-title">Understand Yourself</h3>
+            <p class="card-desc">
+              Explore your core interests, favorite school subjects, analytical strengths, and long-term personal goals through our guided assessment framework.
+            </p>
+            <a href="ai-assessment.html" class="text-btn">Start Self Discovery <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="col-md-4">
+          <div class="step-card">
+            <span class="step-number-badge">Step 02</span>
+            <div class="card-icon-lg">
+              <i class="bi bi-search"></i>
+            </div>
+            <h3 class="card-title">Explore Your Options</h3>
+            <p class="card-desc">
+              Discover careers, industry trajectories, and higher education pathways in India and globally that match your personal strengths and aptitude.
+            </p>
+            <a href="career-explorer.html" class="text-btn">Explore Database <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="col-md-4">
+          <div class="step-card">
+            <span class="step-number-badge">Step 03</span>
+            <div class="card-icon-lg">
+              <i class="bi bi-signpost-split"></i>
+            </div>
+            <h3 class="card-title">Build Your Roadmap</h3>
+            <p class="card-desc">
+              Understand entrance exam syllabi, college admission criteria, critical skill development milestones, and realistic timelines for success.
+            </p>
+            <a href="dashboard.html" class="text-btn">View Roadmap <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 5. CAREER GUIDANCE SECTION ==================== -->
+  <section class="section-padding bg-white">
+    <div class="container">
+      <div class="text-center section-header">
+        <span class="custom-badge"><i class="bi bi-compass"></i> Disciplines</span>
+        <h2 class="section-title mt-2">Explore <span class="gradient-text">Career Paths</span></h2>
+        <p class="section-subtitle">
+          From healthcare to technology, commerce to creative arts, dive deep into specialized fields that align with your potential.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Medical -->
+        <div class="col-md-6 col-lg-4">
+          <div class="career-card">
+            <div class="card-icon-lg" style="background: rgba(6, 182, 212, 0.1); color: var(--cyan);">
+              <i class="bi bi-heart-pulse"></i>
+            </div>
+            <h3 class="card-title">Medical & Healthcare</h3>
+            <p class="card-desc">
+              Explore medicine (MBBS), dentistry (BDS), pharmacy, nursing, biotechnology, and allied healthcare careers dedicated to saving lives and medical science.
+            </p>
+            <a href="medical.html" class="primary-btn mt-auto">
+              Explore Medical <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Engineering -->
+        <div class="col-md-6 col-lg-4">
+          <div class="career-card">
+            <div class="card-icon-lg" style="background: rgba(79, 70, 229, 0.1); color: var(--indigo);">
+              <i class="bi bi-gear-wide-connected"></i>
+            </div>
+            <h3 class="card-title">Engineering & Technology</h3>
+            <p class="card-desc">
+              Explore computer science, AI & data science, mechanical, electrical, civil, and robotics engineering disciplines driving modern technological innovation.
+            </p>
+            <a href="engineering.html" class="primary-btn mt-auto">
+              Explore Engineering <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Science -->
+        <div class="col-md-6 col-lg-4">
+          <div class="career-card">
+            <div class="card-icon-lg" style="background: rgba(37, 99, 235, 0.1); color: var(--blue);">
+              <i class="bi bi-pie-chart"></i>
+            </div>
+            <h3 class="card-title">Science & Research</h3>
+            <p class="card-desc">
+              Explore pure mathematics, theoretical physics, astrophysics, biochemical research, environmental science, and academic research institutions.
+            </p>
+            <a href="science.html" class="primary-btn mt-auto">
+              Explore Science <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Commerce -->
+        <div class="col-md-6 col-lg-4">
+          <div class="career-card">
+            <div class="card-icon-lg" style="background: rgba(16, 185, 129, 0.1); color: var(--success);">
+              <i class="bi bi-currency-rupee"></i>
+            </div>
+            <h3 class="card-title">Commerce & Finance</h3>
+            <p class="card-desc">
+              Explore chartered accountancy (CA), company secretary (CS), CMA, investment banking, economics, wealth management, and corporate finance.
+            </p>
+            <a href="commerce.html" class="primary-btn mt-auto">
+              Explore Commerce <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Arts -->
+        <div class="col-md-6 col-lg-4">
+          <div class="career-card">
+            <div class="card-icon-lg" style="background: rgba(245, 158, 11, 0.1); color: var(--warning);">
+              <i class="bi bi-brush"></i>
+            </div>
+            <h3 class="card-title">Arts & Humanities</h3>
+            <p class="card-desc">
+              Explore clinical psychology, journalism, civil services (UPSC), literature, international relations, sociology, and modern creative communication.
+            </p>
+            <a href="arts.html" class="primary-btn mt-auto">
+              Explore Arts <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Management -->
+        <div class="col-md-6 col-lg-4">
+          <div class="career-card">
+            <div class="card-icon-lg" style="background: rgba(139, 92, 246, 0.1); color: #8B5CF6;">
+              <i class="bi bi-briefcase"></i>
+            </div>
+            <h3 class="card-title">Business & Management</h3>
+            <p class="card-desc">
+              Explore corporate marketing, business analytics, startup entrepreneurship, human resources, supply chain, and BBA/IPMAT programs.
+            </p>
+            <a href="management.html" class="primary-btn mt-auto">
+              Explore Management <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-5">
+        <a href="career-guidance.html" class="secondary-btn">
+          View All Career Disciplines <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 6. ENTRANCE EXAM GUIDANCE ==================== -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="text-center section-header">
+        <span class="custom-badge"><i class="bi bi-journal-bookmark"></i> Entrance Exams</span>
+        <h2 class="section-title mt-2">Preparing for an <span class="gradient-text">Entrance Exam?</span></h2>
+        <p class="section-subtitle">
+          Understand the pathway, syllabus structure, and college admission eligibility before beginning your multi-year preparation journey.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- NEET -->
+        <div class="col-lg-4">
+          <div class="exam-card neet-accent">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <span class="custom-badge badge-cyan">Medical UG</span>
+              <i class="bi bi-hospital text-cyan" style="font-size: 24px;"></i>
+            </div>
+            <h3 class="card-title">NEET</h3>
+            <div class="fw-semibold text-secondary mb-2" style="font-size: 14px;">National Eligibility cum Entrance Test</div>
+            <p class="card-desc">
+              The single national entrance gateway for admission to undergraduate medical programs (MBBS, BDS, AYUSH) across all government and private colleges in India.
+            </p>
+            <div class="exam-badge-strip">
+              <span>Physics</span>
+              <span>Chemistry</span>
+              <span>Biology (Botany + Zoology)</span>
+              <span>720 Marks</span>
+            </div>
+            <div class="mb-4">
+              <div class="small fw-semibold text-navy mb-1"><i class="bi bi-check2 text-success me-1"></i> Class 12 with PCB required</div>
+              <div class="small fw-semibold text-navy"><i class="bi bi-check2 text-success me-1"></i> Opens doors to 100,000+ medical seats</div>
+            </div>
+            <a href="neet.html" class="primary-btn mt-auto">
+              Explore NEET Guidance <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- JEE -->
+        <div class="col-lg-4">
+          <div class="exam-card jee-accent">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <span class="custom-badge">Engineering UG</span>
+              <i class="bi bi-cpu text-indigo" style="font-size: 24px;"></i>
+            </div>
+            <h3 class="card-title">JEE</h3>
+            <div class="fw-semibold text-secondary mb-2" style="font-size: 14px;">Joint Entrance Examination (Main & Adv)</div>
+            <p class="card-desc">
+              The premier national engineering test comprising JEE Main for NITs, IIITs & CFTIs, and JEE Advanced for the prestigious 23 Indian Institutes of Technology (IITs).
+            </p>
+            <div class="exam-badge-strip">
+              <span>Physics</span>
+              <span>Chemistry</span>
+              <span>Mathematics</span>
+              <span>Computer Based Test</span>
+            </div>
+            <div class="mb-4">
+              <div class="small fw-semibold text-navy mb-1"><i class="bi bi-check2 text-success me-1"></i> Class 12 with PCM required</div>
+              <div class="small fw-semibold text-navy"><i class="bi bi-check2 text-success me-1"></i> Gateway to premier tech institutes</div>
+            </div>
+            <a href="jee.html" class="primary-btn mt-auto">
+              Explore JEE Guidance <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- MHT-CET -->
+        <div class="col-lg-4">
+          <div class="exam-card mhtcet-accent">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <span class="custom-badge badge-green">State CET</span>
+              <i class="bi bi-award text-success" style="font-size: 24px;"></i>
+            </div>
+            <h3 class="card-title">MHT-CET</h3>
+            <div class="fw-semibold text-secondary mb-2" style="font-size: 14px;">Maharashtra Common Entrance Test</div>
+            <p class="card-desc">
+              State-level entrance examination for engineering (B.Tech) and pharmacy (B.Pharm) programs in top Maharashtra colleges like COEP, VJTI, SPIT, and ICT Mumbai.
+            </p>
+            <div class="exam-badge-strip">
+              <span>PCM Group</span>
+              <span>PCB Group</span>
+              <span>No Negative Marking</span>
+              <span>HSC Syllabus</span>
+            </div>
+            <div class="mb-4">
+              <div class="small fw-semibold text-navy mb-1"><i class="bi bi-check2 text-success me-1"></i> Engineering & Pharmacy pathways</div>
+              <div class="small fw-semibold text-navy"><i class="bi bi-check2 text-success me-1"></i> 400+ accredited Maharashtra colleges</div>
+            </div>
+            <a href="mhtcet.html" class="primary-btn mt-auto">
+              Explore MHT-CET Guidance <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Official Disclaimer -->
+      <div class="disclaimer-box">
+        <i class="bi bi-info-circle-fill"></i>
+        <div>
+          <strong>Important Verification Note:</strong> Exam rules, eligibility conditions, syllabi, reservation guidelines, and official dates change periodically. Always verify current details directly on the official examination websites (NTA for NEET/JEE, State CET Cell for MHT-CET).
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 7. STREAM SELECTION SECTION ==================== -->
+  <section class="section-padding bg-white">
+    <div class="container">
+      <div class="text-center section-header">
+        <span class="custom-badge"><i class="bi bi-diagram-2"></i> After Class 10</span>
+        <h2 class="section-title mt-2">Not Sure Which <span class="gradient-text">Stream to Choose?</span></h2>
+        <p class="section-subtitle">
+          Choosing between Science, Commerce, and Arts is the first big milestone. Explore the options and long-term futures associated with each.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Science -->
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-card">
+            <div class="card-icon-lg" style="background: rgba(79, 70, 229, 0.1); color: var(--indigo);">
+              <i class="bi bi-atom"></i>
+            </div>
+            <h4 class="card-title">Science Stream</h4>
+            <p class="card-desc">
+              Ideal for students fascinated by natural phenomena, mathematics, technology, medicine, research, and technical systems.
+            </p>
+            <div class="small text-secondary mb-3"><strong>Key Combinations:</strong> PCM, PCB, PCMB</div>
+            <a href="science.html" class="text-btn mt-auto">Explore Science <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Commerce -->
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-card">
+            <div class="card-icon-lg" style="background: rgba(16, 185, 129, 0.1); color: var(--success);">
+              <i class="bi bi-graph-up-arrow"></i>
+            </div>
+            <h4 class="card-title">Commerce Stream</h4>
+            <p class="card-desc">
+              Ideal for students interested in business dynamics, financial markets, accounting, entrepreneurship, and economics.
+            </p>
+            <div class="small text-secondary mb-3"><strong>Key Combinations:</strong> Accounts, Economics, Math</div>
+            <a href="commerce.html" class="text-btn mt-auto">Explore Commerce <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Arts & Humanities -->
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-card">
+            <div class="card-icon-lg" style="background: rgba(245, 158, 11, 0.1); color: var(--warning);">
+              <i class="bi bi-book"></i>
+            </div>
+            <h4 class="card-title">Arts & Humanities</h4>
+            <p class="card-desc">
+              Ideal for thinkers passionate about human behavior, political governance, literature, journalism, public policy, and creative arts.
+            </p>
+            <div class="small text-secondary mb-3"><strong>Key Combinations:</strong> History, Pol Sci, Psychology</div>
+            <a href="arts.html" class="text-btn mt-auto">Explore Arts <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Vocational & Other -->
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-card">
+            <div class="card-icon-lg" style="background: rgba(6, 182, 212, 0.1); color: var(--cyan);">
+              <i class="bi bi-palette"></i>
+            </div>
+            <h4 class="card-title">Design & Emerging</h4>
+            <p class="card-desc">
+              Explore skill-based education, digital product design, culinary arts, hospitality, animation, and fast-growing specialized vocations.
+            </p>
+            <div class="small text-secondary mb-3"><strong>Key Paths:</strong> UI/UX, NID, NIFT, Media</div>
+            <a href="design.html" class="text-btn mt-auto">Explore Design <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 8. AI CAREER ASSESSMENT CALLOUT ==================== -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="card border-0 shadow-lg rounded-4 overflow-hidden" style="background: linear-gradient(135deg, #0F172A 0%, #1E1B4B 100%);">
+        <div class="row align-items-center g-0">
+          <div class="col-lg-7 p-5 text-white">
+            <span class="custom-badge badge-cyan mb-3">
+              <i class="bi bi-cpu"></i> INTERACTIVE EVALUATION
+            </span>
+            <h2 class="text-white fw-bold mb-3" style="font-size: clamp(26px, 3.5vw, 38px);">
+              Take the AI Career Assessment
+            </h2>
+            <p class="text-light opacity-75 mb-4" style="font-size: 17px; line-height: 1.6;">
+              Answer thoughtful questions about your subject affinities, favorite activities, and long-term aspirations. CareerAI maps your profile against 50+ career disciplines to recommend tailored pathways.
+            </p>
+            <div class="d-flex flex-wrap gap-3">
+              <a href="ai-assessment.html" class="primary-btn">
+                Start Free Assessment <i class="bi bi-arrow-right"></i>
+              </a>
+              <a href="career-explorer.html" class="secondary-btn bg-transparent text-white border-light">
+                Browse Career Library
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-5 p-4 text-center d-none d-lg-block">
+            <div class="p-4 rounded-4" style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px);">
+              <i class="bi bi-bullseye text-cyan" style="font-size: 56px;"></i>
+              <h5 class="text-white mt-3 mb-1">Tailored for Class 10 & 12</h5>
+              <p class="text-white-50 small mb-0">Discover alignment with medicine, engineering, finance, law, or design.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 9. CAREER EXPLORER PREVIEW ==================== -->
+  <section class="section-padding bg-white">
+    <div class="container">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end section-header">
+        <div>
+          <span class="custom-badge"><i class="bi bi-collection"></i> Directory</span>
+          <h2 class="section-title mt-2">Explore Popular <span class="gradient-text">Careers</span></h2>
+          <p class="section-subtitle mb-0">
+            A comprehensive look at key professions, required entrance tests, and typical qualification pathways.
+          </p>
+        </div>
+        <div class="mt-3 mt-md-0">
+          <a href="career-explorer.html" class="primary-btn">
+            View All 16+ Careers <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <!-- Doctor -->
+        <div class="col-md-6 col-lg-3">
+          <div class="career-card">
+            <span class="badge badge-cyan align-self-start mb-3">Healthcare</span>
+            <h4 class="card-title mb-1">Medical Doctor (MBBS)</h4>
+            <p class="card-desc">
+              Diagnose illnesses, prescribe therapies, perform surgeries, and safeguard community healthcare.
+            </p>
+            <div class="small text-muted mb-2"><strong>Path:</strong> 10+2 PCB → NEET-UG → MBBS</div>
+            <div class="small text-muted mb-3"><strong>Key Exam:</strong> NEET-UG</div>
+            <a href="medical.html" class="text-btn mt-auto">Learn More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Software Dev -->
+        <div class="col-md-6 col-lg-3">
+          <div class="career-card">
+            <span class="badge custom-badge align-self-start mb-3">Technology</span>
+            <h4 class="card-title mb-1">Software Engineer</h4>
+            <p class="card-desc">
+              Design, build, and deploy software applications, scalable cloud infrastructure, and intelligent algorithms.
+            </p>
+            <div class="small text-muted mb-2"><strong>Path:</strong> 10+2 PCM → JEE/MHT-CET → B.Tech</div>
+            <div class="small text-muted mb-3"><strong>Key Exam:</strong> JEE Main, MHT-CET</div>
+            <a href="engineering.html" class="text-btn mt-auto">Learn More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- CA -->
+        <div class="col-md-6 col-lg-3">
+          <div class="career-card">
+            <span class="badge badge-green align-self-start mb-3">Commerce</span>
+            <h4 class="card-title mb-1">Chartered Accountant</h4>
+            <p class="card-desc">
+              Manage corporate auditing, taxation advisory, forensic accounting, and strategic corporate finance.
+            </p>
+            <div class="small text-muted mb-2"><strong>Path:</strong> 10+2 → CA Foundation → Inter → Final</div>
+            <div class="small text-muted mb-3"><strong>Key Exam:</strong> ICAI CA Exams</div>
+            <a href="commerce.html" class="text-btn mt-auto">Learn More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Data Scientist -->
+        <div class="col-md-6 col-lg-3">
+          <div class="career-card">
+            <span class="badge badge-cyan align-self-start mb-3">AI & Math</span>
+            <h4 class="card-title mb-1">Data Scientist</h4>
+            <p class="card-desc">
+              Analyze complex structured and unstructured datasets to train machine learning models and forecast trends.
+            </p>
+            <div class="small text-muted mb-2"><strong>Path:</strong> 10+2 Math → B.Tech / B.Sc Stats → M.Sc</div>
+            <div class="small text-muted mb-3"><strong>Key Exam:</strong> JEE / University Entrances</div>
+            <a href="engineering.html" class="text-btn mt-auto">Learn More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 10. WHY CAREERAI / TRUST ==================== -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="text-center section-header">
+        <span class="custom-badge"><i class="bi bi-shield-check"></i> Credibility</span>
+        <h2 class="section-title mt-2">Why Indian Students <span class="gradient-text">Trust CareerAI</span></h2>
+        <p class="section-subtitle">
+          Designed specifically around the Indian schooling system, competitive examination landscape, and practical career aspirations.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="feature-card">
+            <div class="card-icon-lg">
+              <i class="bi bi-mortarboard-fill"></i>
+            </div>
+            <h4 class="card-title">Localized Indian Context</h4>
+            <p class="card-desc">
+              Accurate mappings for CBSE, ICSE, and State Boards (including Maharashtra HSC), covering entrance examinations like NEET, JEE, MHT-CET, and CLAT.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card">
+            <div class="card-icon-lg">
+              <i class="bi bi-check-circle"></i>
+            </div>
+            <h4 class="card-title">Unbiased & Objective</h4>
+            <p class="card-desc">
+              We do not promote specific coaching institutes or private colleges. Our guidance is neutral, objective, and centered entirely around student welfare.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card">
+            <div class="card-icon-lg">
+              <i class="bi bi-graph-up"></i>
+            </div>
+            <h4 class="card-title">Clear Roadmaps</h4>
+            <p class="card-desc">
+              Visual end-to-end paths from Class 10 stream choices to college admissions, competitive tests, internships, and actual workplace expectations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 11. FAQ SECTION (PURE CSS) ==================== -->
+  <section class="section-padding bg-white">
+    <div class="container">
+      <div class="text-center section-header">
+        <span class="custom-badge"><i class="bi bi-question-circle"></i> Got Questions?</span>
+        <h2 class="section-title mt-2">Frequently Asked <span class="gradient-text">Questions</span></h2>
+        <p class="section-subtitle">
+          Everything you need to know about navigating streams, exams, and career options.
+        </p>
+      </div>
+
+      <div class="faq-container">
+        <!-- FAQ 1 -->
+        <details class="faq-item" open>
+          <summary class="faq-question">
+            <span>When should a student start planning their career path?</span>
+            <i class="bi bi-chevron-down faq-icon-arrow"></i>
+          </summary>
+          <div class="faq-answer">
+            The ideal time to begin career exploration is during Class 9 and Class 10. This gives students ample time to assess their core academic interests before committing to the Science (PCM/PCB), Commerce, or Arts stream in Class 11.
+          </div>
+        </details>
+
+        <!-- FAQ 2 -->
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>Can I switch streams or career directions after Class 12?</span>
+            <i class="bi bi-chevron-down faq-icon-arrow"></i>
+          </summary>
+          <div class="faq-answer">
+            Yes! Students with a Science background can generally transition into Commerce, Economics, Law, Design, Management (BBA/IPMAT), or Humanities. However, transitioning into medical or core engineering from a Commerce or Arts stream is restricted due to subject prerequisites.
+          </div>
+        </details>
+
+        <!-- FAQ 3 -->
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>What is the difference between NEET and JEE?</span>
+            <i class="bi bi-chevron-down faq-icon-arrow"></i>
+          </summary>
+          <div class="faq-answer">
+            NEET is the single nationwide medical entrance test in India required for MBBS, BDS, and AYUSH courses (demanding Physics, Chemistry, Biology). JEE (Main & Advanced) is the national entrance test for engineering and technical institutions such as IITs, NITs, and IIITs (demanding Physics, Chemistry, Mathematics).
+          </div>
+        </details>
+
+        <!-- FAQ 4 -->
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>Does CareerAI replace professional career counselors?</span>
+            <i class="bi bi-chevron-down faq-icon-arrow"></i>
+          </summary>
+          <div class="faq-answer">
+            CareerAI is designed as an educational exploration tool to empower students with structured insights. We strongly recommend discussing all major academic decisions with parents, qualified career counselors, and school teachers.
+          </div>
+        </details>
+
+        <!-- FAQ 5 -->
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>How does MHT-CET differ from JEE Main?</span>
+            <i class="bi bi-chevron-down faq-icon-arrow"></i>
+          </summary>
+          <div class="faq-answer">
+            MHT-CET is administered specifically by the Maharashtra State CET Cell for admission into engineering and pharmacy colleges within the state of Maharashtra. JEE Main is a central national entrance exam for admission into NITs, IIITs, CFTIs, and top nationwide colleges.
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 12. FINAL CTA ==================== -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="cta-banner">
+        <div class="cta-content">
+          <h2 class="cta-title">Your Career Journey Starts Here.</h2>
+          <p class="cta-text">
+            Explore your interests, understand your options, and build a clearer path toward your future with CareerAI.
+          </p>
+          <div class="d-flex flex-wrap justify-content-center gap-3">
+            <a href="ai-assessment.html" class="primary-btn">
+              <i class="bi bi-cpu"></i> Start AI Assessment
+            </a>
+            <a href="career-explorer.html" class="secondary-btn bg-white text-navy">
+              <i class="bi bi-compass"></i> Explore Careers
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 13. FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Col 1: Brand Info -->
+        <div class="col-lg-4 col-md-6">
+          <a href="index.html" class="footer-brand">
+            <span class="brand-icon"><i class="bi bi-compass"></i></span>
+            <span>Career<span class="text-cyan">AI</span></span>
+          </a>
+          <p class="footer-desc">
+            AI-powered career exploration platform tailored for Indian students in Class 10, 11, and 12 deciding their future direction.
+          </p>
+          <div class="d-flex gap-3 text-secondary">
+            <span class="badge bg-dark border border-secondary text-light">Class 10 Guidance</span>
+            <span class="badge bg-dark border border-secondary text-light">Class 12 Pathways</span>
+          </div>
+        </div>
+
+        <!-- Col 2: Explore -->
+        <div class="col-lg-2 col-md-3 col-6">
+          <h5 class="footer-heading">Explore</h5>
+          <ul class="footer-links">
+            <li><a href="career-guidance.html">Career Guidance</a></li>
+            <li><a href="career-explorer.html">Career Explorer</a></li>
+            <li><a href="ai-assessment.html">AI Assessment</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="dashboard.html">Student Dashboard</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Entrance Exams -->
+        <div class="col-lg-2 col-md-3 col-6">
+          <h5 class="footer-heading">Exams</h5>
+          <ul class="footer-links">
+            <li><a href="neet.html">NEET (Medical)</a></li>
+            <li><a href="jee.html">JEE (Engineering)</a></li>
+            <li><a href="mhtcet.html">MHT-CET (Maharashtra)</a></li>
+            <li><a href="law.html">CLAT (Law)</a></li>
+            <li><a href="design.html">NID & NIFT (Design)</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Streams -->
+        <div class="col-lg-2 col-md-3 col-6">
+          <h5 class="footer-heading">Streams</h5>
+          <ul class="footer-links">
+            <li><a href="science.html">Science Stream</a></li>
+            <li><a href="commerce.html">Commerce Stream</a></li>
+            <li><a href="arts.html">Arts & Humanities</a></li>
+            <li><a href="engineering.html">Engineering & Tech</a></li>
+            <li><a href="management.html">Management (BBA)</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 5: Company & Legal -->
+        <div class="col-lg-2 col-md-3 col-6">
+          <h5 class="footer-heading">Company</h5>
+          <ul class="footer-links">
+            <li><a href="about.html">About CareerAI</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="about.html#privacy">Privacy Policy</a></li>
+            <li><a href="about.html#terms">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 CareerAI. All rights reserved. Built for Indian Students.
+        </div>
+        <div class="d-flex gap-3">
+          <a href="about.html" class="text-secondary">Disclaimer</a>
+          <a href="contact.html" class="text-secondary">Help & Support</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Dashboard — CareerAI</title>
+  <meta name="description" content="View your personalized career recommendations, upcoming Indian entrance exam milestones, and interactive career roadmap.">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-light">
+
+  <!-- ==================== NAVBAR ==================== -->
+  <header class="site-header">
+    <nav class="custom-navbar">
+      <a href="index.html" class="nav-brand">
+        <span class="brand-icon"><i class="bi bi-compass"></i></span>
+        <span>Career<span class="gradient-text">AI</span></span>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+        <i class="bi bi-list open-icon"></i>
+        <i class="bi bi-x-lg close-icon"></i>
+      </label>
+
+      <div class="nav-menu">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-item-link">Home</a></li>
+          <li><a href="career-guidance.html" class="nav-item-link">Career Guidance</a></li>
+          <li><a href="neet.html" class="nav-item-link">Exams</a></li>
+          <li><a href="science.html" class="nav-item-link">Streams</a></li>
+          <li><a href="career-explorer.html" class="nav-item-link">Career Explorer</a></li>
+          <li><a href="ai-assessment.html" class="nav-item-link">AI Assessment</a></li>
+          <li><a href="resources.html" class="nav-item-link">Resources</a></li>
+          <li><a href="about.html" class="nav-item-link">About</a></li>
+        </ul>
+        <div class="nav-auth">
+          <div class="d-flex align-items-center gap-2 px-3 py-1 bg-white border rounded-pill">
+            <span class="pulse-dot"></span>
+            <span class="small fw-bold text-navy">Arjun Sharma</span>
+          </div>
+          <a href="login.html" class="secondary-btn py-1 px-3" style="font-size: 13px;">Logout</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ==================== DASHBOARD HEADER ==================== -->
+  <section class="bg-white border-bottom py-4">
+    <div class="container">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
+        <div>
+          <span class="custom-badge badge-green mb-2"><i class="bi bi-person-check-fill"></i> Active Student Profile</span>
+          <h1 class="fw-bold mb-1" style="font-size: 28px; color: var(--navy);">Good Morning, Arjun 👋</h1>
+          <p class="text-muted mb-0">Let's build your career roadmap and track your entrance milestones.</p>
+        </div>
+        <div class="d-flex gap-2">
+          <a href="ai-assessment.html" class="secondary-btn" style="font-size: 14px;">
+            <i class="bi bi-arrow-repeat"></i> Retake Assessment
+          </a>
+          <a href="career-explorer.html" class="primary-btn" style="font-size: 14px;">
+            <i class="bi bi-search"></i> Explore Careers
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== DASHBOARD METRICS STRIP ==================== -->
+  <section class="py-4">
+    <div class="container">
+      <div class="row g-3">
+        <!-- Metric 1: Match Score -->
+        <div class="col-6 col-lg-3">
+          <div class="card border-0 shadow-sm rounded-4 p-3 bg-white h-100">
+            <div class="d-flex justify-content-between align-items-start mb-2">
+              <span class="small text-muted fw-bold text-uppercase">Top Match</span>
+              <span class="badge badge-green">High Fit</span>
+            </div>
+            <div class="d-flex align-items-baseline gap-2">
+              <span class="display-6 fw-bold" style="color: var(--indigo);">92%</span>
+              <span class="text-muted small">Medical Science</span>
+            </div>
+            <div class="progress-track mt-2" style="height: 6px;">
+              <div class="progress-bar-fill bg-grad-1" style="width: 92%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Metric 2: Saved Careers -->
+        <div class="col-6 col-lg-3">
+          <div class="card border-0 shadow-sm rounded-4 p-3 bg-white h-100">
+            <div class="d-flex justify-content-between align-items-start mb-2">
+              <span class="small text-muted fw-bold text-uppercase">Saved Careers</span>
+              <i class="bi bi-bookmark-fill text-indigo"></i>
+            </div>
+            <div class="display-6 fw-bold" style="color: var(--navy);">8</div>
+            <div class="text-muted small mt-1">Disciplines bookmarked</div>
+          </div>
+        </div>
+
+        <!-- Metric 3: Target Exams -->
+        <div class="col-6 col-lg-3">
+          <div class="card border-0 shadow-sm rounded-4 p-3 bg-white h-100">
+            <div class="d-flex justify-content-between align-items-start mb-2">
+              <span class="small text-muted fw-bold text-uppercase">Exams Tracked</span>
+              <i class="bi bi-calendar-event text-cyan"></i>
+            </div>
+            <div class="display-6 fw-bold" style="color: var(--navy);">3</div>
+            <div class="text-muted small mt-1">NEET, JEE Main, MHT-CET</div>
+          </div>
+        </div>
+
+        <!-- Metric 4: Assessment Status -->
+        <div class="col-6 col-lg-3">
+          <div class="card border-0 shadow-sm rounded-4 p-3 bg-white h-100">
+            <div class="d-flex justify-content-between align-items-start mb-2">
+              <span class="small text-muted fw-bold text-uppercase">Assessment</span>
+              <span class="badge badge-cyan">Completed</span>
+            </div>
+            <div class="display-6 fw-bold text-success">Ready</div>
+            <div class="text-muted small mt-1">Profile calibrated</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== MAIN DASHBOARD BODY ==================== -->
+  <section class="pb-5">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Left 8 Columns: Recommendations & Roadmap -->
+        <div class="col-lg-8">
+          <!-- Recommended Careers Card Box -->
+          <div class="card border-0 shadow-sm rounded-4 p-4 bg-white mb-4">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <div>
+                <h3 class="fw-bold mb-1" style="font-size: 20px; color: var(--navy);">Your AI Career Recommendations</h3>
+                <p class="text-muted small mb-0">Ranked by alignment with your subject interests and analytical profile.</p>
+              </div>
+              <a href="career-explorer.html" class="text-btn small">View All <i class="bi bi-arrow-right"></i></a>
+            </div>
+
+            <div class="row g-3">
+              <!-- Rec 1 -->
+              <div class="col-md-6">
+                <div class="p-3 rounded-3 border bg-light">
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="badge badge-cyan">92% Match</span>
+                    <i class="bi bi-bookmark-fill text-indigo"></i>
+                  </div>
+                  <h4 class="fw-bold mb-1" style="font-size: 16px; color: var(--navy);">Medical Doctor (MBBS)</h4>
+                  <p class="text-muted small mb-2">Diagnosis, clinical therapeutics & patient healthcare.</p>
+                  <div class="d-flex justify-content-between align-items-center pt-2 border-top">
+                    <span class="small text-muted">Exam: <strong>NEET-UG</strong></span>
+                    <a href="medical.html" class="fw-semibold text-primary small">Details &rarr;</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Rec 2 -->
+              <div class="col-md-6">
+                <div class="p-3 rounded-3 border bg-light">
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="badge custom-badge">87% Match</span>
+                    <i class="bi bi-bookmark-fill text-indigo"></i>
+                  </div>
+                  <h4 class="fw-bold mb-1" style="font-size: 16px; color: var(--navy);">Software & AI Engineer</h4>
+                  <p class="text-muted small mb-2">Intelligent systems, software design & cloud architecture.</p>
+                  <div class="d-flex justify-content-between align-items-center pt-2 border-top">
+                    <span class="small text-muted">Exam: <strong>JEE / MHT-CET</strong></span>
+                    <a href="engineering.html" class="fw-semibold text-primary small">Details &rarr;</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Rec 3 -->
+              <div class="col-md-6">
+                <div class="p-3 rounded-3 border bg-light">
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="badge badge-green">81% Match</span>
+                    <i class="bi bi-bookmark text-muted"></i>
+                  </div>
+                  <h4 class="fw-bold mb-1" style="font-size: 16px; color: var(--navy);">Data Scientist</h4>
+                  <p class="text-muted small mb-2">Predictive modeling, machine learning & analytics.</p>
+                  <div class="d-flex justify-content-between align-items-center pt-2 border-top">
+                    <span class="small text-muted">Exam: <strong>JEE / CUET</strong></span>
+                    <a href="science.html" class="fw-semibold text-primary small">Details &rarr;</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Rec 4 -->
+              <div class="col-md-6">
+                <div class="p-3 rounded-3 border bg-light">
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="badge badge-cyan">76% Match</span>
+                    <i class="bi bi-bookmark text-muted"></i>
+                  </div>
+                  <h4 class="fw-bold mb-1" style="font-size: 16px; color: var(--navy);">Chartered Accountant</h4>
+                  <p class="text-muted small mb-2">Auditing, financial strategy, taxation & corporate law.</p>
+                  <div class="d-flex justify-content-between align-items-center pt-2 border-top">
+                    <span class="small text-muted">Exam: <strong>CA Foundation</strong></span>
+                    <a href="commerce.html" class="fw-semibold text-primary small">Details &rarr;</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Vertical Timeline: Your Career Roadmap -->
+          <div class="card border-0 shadow-sm rounded-4 p-4 bg-white">
+            <div class="mb-4">
+              <span class="custom-badge mb-2"><i class="bi bi-map"></i> Step-by-Step Blueprint</span>
+              <h3 class="fw-bold mb-1" style="font-size: 22px; color: var(--navy);">Your Career Roadmap</h3>
+              <p class="text-muted small mb-0">Follow this structured pathway from your current school grade to your career destination.</p>
+            </div>
+
+            <!-- CSS Vertical Timeline Component -->
+            <div class="timeline">
+              <!-- Step 1 -->
+              <div class="timeline-item">
+                <div class="timeline-node">1</div>
+                <div class="timeline-content-card">
+                  <div class="timeline-title">
+                    <span>Class 10 Milestones</span>
+                    <span class="timeline-badge text-success">Completed</span>
+                  </div>
+                  <p class="text-muted small mb-0">
+                    Solidify foundational math, science, and social sciences. Understand strengths and prepare for Class 11 stream selection.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Step 2 -->
+              <div class="timeline-item">
+                <div class="timeline-node">2</div>
+                <div class="timeline-content-card">
+                  <div class="timeline-title">
+                    <span>Choose Target Stream</span>
+                    <span class="timeline-badge text-primary">Current Stage</span>
+                  </div>
+                  <p class="text-muted small mb-0">
+                    Select Science (PCM / PCB), Commerce, or Arts based on aptitude. Align high school electives with career prerequisites.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Step 3 -->
+              <div class="timeline-item">
+                <div class="timeline-node">3</div>
+                <div class="timeline-content-card">
+                  <div class="timeline-title">
+                    <span>Explore Careers & Domains</span>
+                    <span class="timeline-badge text-secondary">In Progress</span>
+                  </div>
+                  <p class="text-muted small mb-0">
+                    Research day-to-day job expectations, long-term industry growth, salary benchmarks, and required qualifications.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Step 4 -->
+              <div class="timeline-item">
+                <div class="timeline-node">4</div>
+                <div class="timeline-content-card">
+                  <div class="timeline-title">
+                    <span>Entrance Exam Preparation</span>
+                    <span class="timeline-badge text-muted">Upcoming</span>
+                  </div>
+                  <p class="text-muted small mb-0">
+                    Structured preparation for NEET, JEE Main & Advanced, MHT-CET, or CLAT with conceptual clarity, NCERT, and mock tests.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Step 5 -->
+              <div class="timeline-item">
+                <div class="timeline-node">5</div>
+                <div class="timeline-content-card">
+                  <div class="timeline-title">
+                    <span>Undergraduate College & Degree</span>
+                    <span class="timeline-badge text-muted">Future</span>
+                  </div>
+                  <p class="text-muted small mb-0">
+                    Admission through counselling (JoSAA, MCC, or State CET) to MBBS, B.Tech, B.Com, BA LLB, or B.Des programs.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Step 6 -->
+              <div class="timeline-item">
+                <div class="timeline-node">6</div>
+                <div class="timeline-content-card">
+                  <div class="timeline-title">
+                    <span>Skill Building & Internships</span>
+                    <span class="timeline-badge text-muted">Future</span>
+                  </div>
+                  <p class="text-muted small mb-0">
+                    Gain practical experience, clinical rotations, tech hackathons, or financial internships before stepping into industry.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Step 7 -->
+              <div class="timeline-item">
+                <div class="timeline-node">7</div>
+                <div class="timeline-content-card">
+                  <div class="timeline-title">
+                    <span>Professional Career Launch</span>
+                    <span class="timeline-badge text-muted">Goal</span>
+                  </div>
+                  <p class="text-muted small mb-0">
+                    Begin working as a qualified physician, engineer, analyst, or entrepreneur with clear lifelong learning trajectories.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right 4 Columns: Upcoming Exams & Resources -->
+        <div class="col-lg-4">
+          <!-- Upcoming Exams Card -->
+          <div class="card border-0 shadow-sm rounded-4 p-4 bg-white mb-4">
+            <h3 class="fw-bold mb-3" style="font-size: 18px; color: var(--navy);">
+              <i class="bi bi-clock-history text-indigo me-1"></i> Entrance Exam Milestones
+            </h3>
+            <p class="text-muted small mb-3">General indicative annual timeline for key competitive tests in India.</p>
+
+            <!-- Exam 1: NEET -->
+            <div class="p-3 rounded-3 border mb-3 bg-light">
+              <div class="d-flex justify-content-between align-items-center mb-1">
+                <span class="fw-bold text-navy" style="font-size: 15px;">NEET-UG</span>
+                <span class="badge badge-cyan">May (Tentative)</span>
+              </div>
+              <div class="small text-muted mb-2">Pen & Paper mode across India</div>
+              <a href="neet.html" class="small fw-semibold text-primary">Read NEET Guide &rarr;</a>
+            </div>
+
+            <!-- Exam 2: JEE Main -->
+            <div class="p-3 rounded-3 border mb-3 bg-light">
+              <div class="d-flex justify-content-between align-items-center mb-1">
+                <span class="fw-bold text-navy" style="font-size: 15px;">JEE Main (Session 1 & 2)</span>
+                <span class="badge custom-badge">Jan & Apr</span>
+              </div>
+              <div class="small text-muted mb-2">CBT Mode for NITs/IIITs & JEE Adv filter</div>
+              <a href="jee.html" class="small fw-semibold text-primary">Read JEE Guide &rarr;</a>
+            </div>
+
+            <!-- Exam 3: MHT-CET -->
+            <div class="p-3 rounded-3 border bg-light">
+              <div class="d-flex justify-content-between align-items-center mb-1">
+                <span class="fw-bold text-navy" style="font-size: 15px;">MHT-CET (PCM/PCB)</span>
+                <span class="badge badge-green">Apr – May</span>
+              </div>
+              <div class="small text-muted mb-2">State CET for Maharashtra B.Tech/Pharmacy</div>
+              <a href="mhtcet.html" class="small fw-semibold text-primary">Read MHT-CET Guide &rarr;</a>
+            </div>
+
+            <div class="mt-3 p-2 bg-warning-subtle rounded-3 small text-dark border border-warning">
+              <i class="bi bi-exclamation-triangle-fill text-warning me-1"></i>
+              Always verify real dates on official portals (NTA / State CET Cell).
+            </div>
+          </div>
+
+          <!-- Quick Resources -->
+          <div class="card border-0 shadow-sm rounded-4 p-4 bg-white">
+            <h3 class="fw-bold mb-3" style="font-size: 18px; color: var(--navy);">
+              <i class="bi bi-bookmarks text-cyan me-1"></i> Recommended Resources
+            </h3>
+            <ul class="list-unstyled mb-0 d-flex flex-column gap-3">
+              <li class="d-flex align-items-center gap-3">
+                <div class="card-icon-lg mb-0" style="width: 40px; height: 40px; font-size: 18px;">
+                  <i class="bi bi-calendar-check"></i>
+                </div>
+                <div>
+                  <a href="resources.html" class="fw-bold text-navy text-decoration-none d-block" style="font-size: 14.5px;">Study Planning & Time Mgmt</a>
+                  <span class="small text-muted">Weekly timetable strategies</span>
+                </div>
+              </li>
+              <li class="d-flex align-items-center gap-3">
+                <div class="card-icon-lg mb-0" style="width: 40px; height: 40px; font-size: 18px; background: rgba(6, 182, 212, 0.1); color: var(--cyan);">
+                  <i class="bi bi-award"></i>
+                </div>
+                <div>
+                  <a href="resources.html" class="fw-bold text-navy text-decoration-none d-block" style="font-size: 14.5px;">Scholarship Awareness</a>
+                  <span class="small text-muted">National & merit scholarships</span>
+                </div>
+              </li>
+              <li class="d-flex align-items-center gap-3">
+                <div class="card-icon-lg mb-0" style="width: 40px; height: 40px; font-size: 18px; background: rgba(16, 185, 129, 0.1); color: var(--success);">
+                  <i class="bi bi-file-earmark-text"></i>
+                </div>
+                <div>
+                  <a href="resources.html" class="fw-bold text-navy text-decoration-none d-block" style="font-size: 14.5px;">Mock Test Analysis Framework</a>
+                  <span class="small text-muted">Diagnosing accuracy & speed</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container text-center">
+      <p class="mb-2 text-white-50">&copy; 2026 CareerAI. All rights reserved.</p>
+      <div class="d-flex justify-content-center gap-3 text-secondary small">
+        <a href="index.html" class="text-secondary">Home</a>
+        <a href="career-explorer.html" class="text-secondary">Explore Careers</a>
+        <a href="resources.html" class="text-secondary">Resources</a>
+        <a href="contact.html" class="text-secondary">Support</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — CareerAI Support</title>
+  <meta name="description" content="Reach out to the CareerAI team with questions about stream selection, entrance exam guidance, or platform assistance.">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <header class="site-header">
+    <nav class="custom-navbar">
+      <a href="index.html" class="nav-brand">
+        <span class="brand-icon"><i class="bi bi-compass"></i></span>
+        <span>Career<span class="gradient-text">AI</span></span>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+        <i class="bi bi-list open-icon"></i>
+        <i class="bi bi-x-lg close-icon"></i>
+      </label>
+
+      <div class="nav-menu">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-item-link">Home</a></li>
+          <li><a href="career-guidance.html" class="nav-item-link">Career Guidance</a></li>
+          <li><a href="neet.html" class="nav-item-link">Exams</a></li>
+          <li><a href="science.html" class="nav-item-link">Streams</a></li>
+          <li><a href="career-explorer.html" class="nav-item-link">Career Explorer</a></li>
+          <li><a href="ai-assessment.html" class="nav-item-link">AI Assessment</a></li>
+          <li><a href="resources.html" class="nav-item-link">Resources</a></li>
+          <li><a href="about.html" class="nav-item-link">About</a></li>
+        </ul>
+        <div class="nav-auth">
+          <a href="login.html" class="nav-login-btn">Login</a>
+          <a href="signup.html" class="nav-cta-btn">Get Started</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ==================== BREADCRUMB ==================== -->
+  <div class="breadcrumb-wrap">
+    <div class="container">
+      <ul class="breadcrumb-list">
+        <li><a href="index.html"><i class="bi bi-house-door"></i> Home</a></li>
+        <li><i class="bi bi-chevron-right"></i></li>
+        <li class="current">Contact Us</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="page-hero-banner">
+    <div class="container text-center">
+      <span class="custom-badge mb-3"><i class="bi bi-envelope"></i> GET IN TOUCH</span>
+      <h1 class="page-hero-title">We're Here to <span class="gradient-text">Help You</span></h1>
+      <p class="page-hero-lead mx-auto">
+        Have questions about stream selection, entrance exam guidelines, or our AI platform? Send us a message or review our answers below.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT FORM & INFO ==================== -->
+  <main class="section-padding">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Contact Form (Col 7) -->
+        <div class="col-lg-7">
+          <div class="card border-0 shadow-sm rounded-4 p-4 p-md-5 bg-white">
+            <h3 class="fw-bold mb-2 text-navy" style="font-size: 24px;">Send Us a Message</h3>
+            <p class="text-muted small mb-4">We usually respond within 24 to 48 hours on business days.</p>
+
+            <form action="contact.html" method="get">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="c-name" class="form-label">Full Name</label>
+                  <input type="text" id="c-name" class="form-control" placeholder="Arjun Sharma" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="c-email" class="form-label">Email Address</label>
+                  <input type="email" id="c-email" class="form-control" placeholder="student@example.com" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="c-phone" class="form-label">Phone Number (Optional)</label>
+                  <input type="tel" id="c-phone" class="form-control" placeholder="+91 98765 43210">
+                </div>
+                <div class="col-md-6">
+                  <label for="c-subject" class="form-label">Subject</label>
+                  <select id="c-subject" class="form-select" required>
+                    <option value="stream">Stream Selection Guidance</option>
+                    <option value="exams">Entrance Exam Questions (NEET/JEE/CET)</option>
+                    <option value="assessment">Assessment Result Feedback</option>
+                    <option value="general">General Inquiry</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label for="c-message" class="form-label">Your Message</label>
+                  <textarea id="c-message" class="form-control" rows="5" placeholder="Tell us how we can help your educational journey..." required></textarea>
+                </div>
+                <div class="col-12 mt-4">
+                  <button type="submit" class="primary-btn w-100 py-3">
+                    <i class="bi bi-send-fill"></i> Send Message
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Contact Info & Office (Col 5) -->
+        <div class="col-lg-5">
+          <div class="d-flex flex-column gap-4">
+            <!-- Office Card -->
+            <div class="card border-0 shadow-sm rounded-4 p-4 bg-white">
+              <h4 class="fw-bold text-navy mb-3">Support Contacts</h4>
+              <div class="d-flex align-items-start gap-3 mb-3">
+                <div class="card-icon-lg mb-0" style="width: 44px; height: 44px; font-size: 20px;">
+                  <i class="bi bi-envelope-at-fill"></i>
+                </div>
+                <div>
+                  <div class="small fw-bold text-muted">Email Support</div>
+                  <div class="fw-semibold text-navy">support@careerai.in</div>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start gap-3 mb-3">
+                <div class="card-icon-lg mb-0" style="width: 44px; height: 44px; font-size: 20px; background: rgba(6, 182, 212, 0.1); color: var(--cyan);">
+                  <i class="bi bi-telephone-fill"></i>
+                </div>
+                <div>
+                  <div class="small fw-bold text-muted">Student Helpline (10 AM - 6 PM IST)</div>
+                  <div class="fw-semibold text-navy">+91 (022) 4890-2100</div>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start gap-3">
+                <div class="card-icon-lg mb-0" style="width: 44px; height: 44px; font-size: 20px; background: rgba(16, 185, 129, 0.1); color: var(--success);">
+                  <i class="bi bi-geo-alt-fill"></i>
+                </div>
+                <div>
+                  <div class="small fw-bold text-muted">Headquarters</div>
+                  <div class="fw-semibold text-navy">Bandra-Kurla Complex, Mumbai, Maharashtra 400051</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Advice Card -->
+            <div class="card border-0 shadow-sm rounded-4 p-4 text-white" style="background: var(--gradient-primary);">
+              <h4 class="fw-bold mb-2">Need Immediate Guidance?</h4>
+              <p class="small text-light opacity-90 mb-3">
+                Take our free 3-minute AI Assessment for an instant overview of matching careers.
+              </p>
+              <a href="ai-assessment.html" class="btn btn-light text-primary fw-bold rounded-pill px-4">
+                Launch Assessment &rarr;
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ Section (Pure CSS HTML5 Details/Summary) -->
+      <div class="mt-5 pt-5 border-top">
+        <div class="text-center section-header mb-4">
+          <span class="custom-badge"><i class="bi bi-question-circle"></i> Quick Answers</span>
+          <h2 class="section-title mt-2">Support <span class="gradient-text">FAQs</span></h2>
+        </div>
+
+        <div class="faq-container">
+          <details class="faq-item" open>
+            <summary class="faq-question">
+              <span>Is CareerAI completely free for students?</span>
+              <i class="bi bi-chevron-down faq-icon-arrow"></i>
+            </summary>
+            <div class="faq-answer">
+              Yes, all exploration guides, career pathways, entrance exam timelines, and the core AI interest assessment are 100% free for students and parents.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>Does CareerAI share student phone numbers with coaching classes?</span>
+              <i class="bi bi-chevron-down faq-icon-arrow"></i>
+            </summary>
+            <div class="faq-answer">
+              No. We maintain strict student privacy standards and never sell student data to external coaching institutes or third-party marketing firms.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>Can schools or educators use CareerAI for their classrooms?</span>
+              <i class="bi bi-chevron-down faq-icon-arrow"></i>
+            </summary>
+            <div class="faq-answer">
+              Yes! Teachers and school counselors across India utilize our career exploration pages and roadmaps to conduct career awareness sessions in Classes 9, 10, 11, and 12.
+            </div>
+          </details>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <a href="index.html" class="footer-brand">
+            <span class="brand-icon"><i class="bi bi-compass"></i></span>
+            <span>Career<span class="text-cyan">AI</span></span>
+          </a>
+          <p class="footer-desc">
+            Empowering students across India with clear, unbiased career roadmaps.
+          </p>
+        </div>
+        <div class="col-lg-2 col-md-3 col-6">
+          <h5 class="footer-heading">Explore</h5>
+          <ul class="footer-links">
+            <li><a href="career-guidance.html">Career Guidance</a></li>
+            <li><a href="career-explorer.html">Career Explorer</a></li>
+            <li><a href="ai-assessment.html">AI Assessment</a></li>
+            <li><a href="resources.html">Resources</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-3 col-6">
+          <h5 class="footer-heading">Exams</h5>
+          <ul class="footer-links">
+            <li><a href="neet.html">NEET</a></li>
+            <li><a href="jee.html">JEE</a></li>
+            <li><a href="mhtcet.html">MHT-CET</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-3 col-6">
+          <h5 class="footer-heading">Streams</h5>
+          <ul class="footer-links">
+            <li><a href="science.html">Science</a></li>
+            <li><a href="commerce.html">Commerce</a></li>
+            <li><a href="arts.html">Arts</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-3 col-6">
+          <h5 class="footer-heading">Company</h5>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Support</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 CareerAI. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Career Guidance for Every Student — CareerAI</title>
+  <meta name="description" content="Comprehensive career guidance framework for Indian students after Class 10 and 12. Explore Science, Commerce, Arts, Engineering, Medical, Law, and Design.">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <header class="site-header">
+    <nav class="custom-navbar">
+      <a href="index.html" class="nav-brand">
+        <span class="brand-icon"><i class="bi bi-compass"></i></span>
+        <span>Career<span class="gradient-text">AI</span></span>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+        <i class="bi bi-list open-icon"></i>
+        <i class="bi bi-x-lg close-icon"></i>
+      </label>
+
+      <div class="nav-menu">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-item-link">Home</a></li>
+          <li><a href="career-guidance.html" class="nav-item-link active">Career Guidance</a></li>
+          <li><a href="neet.html" class="nav-item-link">Exams</a></li>
+          <li><a href="science.html" class="nav-item-link">Streams</a></li>
+          <li><a href="career-explorer.html" class="nav-item-link">Career Explorer</a></li>
+          <li><a href="ai-assessment.html" class="nav-item-link">AI Assessment</a></li>
+          <li><a href="resources.html" class="nav-item-link">Resources</a></li>
+          <li><a href="about.html" class="nav-item-link">About</a></li>
+        </ul>
+        <div class="nav-auth">
+          <a href="login.html" class="nav-login-btn">Login</a>
+          <a href="signup.html" class="nav-cta-btn">Get Started</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ==================== BREADCRUMB ==================== -->
+  <div class="breadcrumb-wrap">
+    <div class="container">
+      <ul class="breadcrumb-list">
+        <li><a href="index.html"><i class="bi bi-house-door"></i> Home</a></li>
+        <li><i class="bi bi-chevron-right"></i></li>
+        <li class="current">Career Guidance</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ==================== PAGE HERO BANNER ==================== -->
+  <section class="page-hero-banner">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <span class="custom-badge mb-3"><i class="bi bi-compass"></i> FOUNDATIONAL FRAMEWORK</span>
+          <h1 class="page-hero-title">Career Guidance for <span class="gradient-text">Every Student</span></h1>
+          <p class="page-hero-lead">
+            Navigating your career path shouldn't feel like guesswork. Understand your strengths, evaluate academic streams, and connect school subjects to rewarding professional futures in India and abroad.
+          </p>
+          <div class="d-flex flex-wrap gap-3 mt-4">
+            <a href="ai-assessment.html" class="primary-btn">
+              <i class="bi bi-cpu"></i> Assess Your Interests
+            </a>
+            <a href="career-explorer.html" class="secondary-btn">
+              <i class="bi bi-search"></i> Browse Career Directory
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 7 PILLARS OF CAREER SELECTION ==================== -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="text-center section-header">
+        <span class="custom-badge"><i class="bi bi-lightbulb"></i> How to Decide</span>
+        <h2 class="section-title mt-2">The 6 Pillars of <span class="gradient-text">Informed Decision Making</span></h2>
+        <p class="section-subtitle">
+          Before finalizing any stream or entrance exam coaching, analyze these six vital dimensions of your profile.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Pillar 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-card">
+            <div class="card-icon-lg">
+              <i class="bi bi-heart"></i>
+            </div>
+            <h4 class="card-title">1. Genuine Interests</h4>
+            <p class="card-desc">
+              Identify the topics you naturally gravitate toward reading about, building, or discussing when no grades or exams are forcing you.
+            </p>
+          </div>
+        </div>
+
+        <!-- Pillar 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-card">
+            <div class="card-icon-lg" style="background: rgba(6, 182, 212, 0.1); color: var(--cyan);">
+              <i class="bi bi-journal-check"></i>
+            </div>
+            <h4 class="card-title">2. Subject Strengths</h4>
+            <p class="card-desc">
+              Observe your consistent conceptual understanding in mathematics, sciences, languages, or social studies without undue cramming stress.
+            </p>
+          </div>
+        </div>
+
+        <!-- Pillar 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-card">
+            <div class="card-icon-lg" style="background: rgba(16, 185, 129, 0.1); color: var(--success);">
+              <i class="bi bi-puzzle"></i>
+            </div>
+            <h4 class="card-title">3. Cognitive Aptitude</h4>
+            <p class="card-desc">
+              Do you excel in spatial visual reasoning, verbal persuasion, mathematical problem solving, or empathetic patient care?
+            </p>
+          </div>
+        </div>
+
+        <!-- Pillar 4 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-card">
+            <div class="card-icon-lg" style="background: rgba(245, 158, 11, 0.1); color: var(--warning);">
+              <i class="bi bi-mortarboard"></i>
+            </div>
+            <h4 class="card-title">4. Educational Pathways</h4>
+            <p class="card-desc">
+              Map out required undergraduate degrees (MBBS, B.Tech, B.Com, BA LLB, B.Des) and their competitive entrance exam prerequisites.
+            </p>
+          </div>
+        </div>
+
+        <!-- Pillar 5 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-card">
+            <div class="card-icon-lg" style="background: rgba(139, 92, 246, 0.1); color: #8B5CF6;">
+              <i class="bi bi-graph-up-arrow"></i>
+            </div>
+            <h4 class="card-title">5. Industry Outlook</h4>
+            <p class="card-desc">
+              Examine 10-year market demand, technological automation impacts, starting compensation benchmarks, and geographic opportunities.
+            </p>
+          </div>
+        </div>
+
+        <!-- Pillar 6 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-card">
+            <div class="card-icon-lg" style="background: rgba(236, 72, 153, 0.1); color: #EC4899;">
+              <i class="bi bi-clock-history"></i>
+            </div>
+            <h4 class="card-title">6. Lifestyle & Timeline</h4>
+            <p class="card-desc">
+              Understand the training duration: medical careers take 5.5 to 10 years, whereas computer science or design can launch within 4 years.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ALL CAREER DISCIPLINES ==================== -->
+  <section class="section-padding bg-white">
+    <div class="container">
+      <div class="text-center section-header">
+        <span class="custom-badge"><i class="bi bi-grid-3x3-gap"></i> Domains</span>
+        <h2 class="section-title mt-2">Explore Dedicated <span class="gradient-text">Discipline Guides</span></h2>
+        <p class="section-subtitle">
+          Every field has unique entrance examinations, college tiers, core competencies, and career ladders. Select a discipline below to learn everything about it.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Medical -->
+        <div class="col-md-6 col-lg-3">
+          <div class="career-card">
+            <div class="card-icon-lg" style="background: rgba(6, 182, 212, 0.1); color: var(--cyan);">
+              <i class="bi bi-heart-pulse"></i>
+            </div>
+            <h4 class="card-title">Medical & Healthcare</h4>
+            <p class="card-desc">
+              Clinical medicine, dental surgery, pharmacy, physiotherapy, clinical research, and public health systems.
+            </p>
+            <div class="small text-muted mb-3"><strong>Key Entrance:</strong> NEET-UG</div>
+            <a href="medical.html" class="primary-btn mt-auto">Open Medical Guide &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Engineering -->
+        <div class="col-md-6 col-lg-3">
+          <div class="career-card">
+            <div class="card-icon-lg" style="background: rgba(79, 70, 229, 0.1); color: var(--indigo);">
+              <i class="bi bi-cpu"></i>
+            </div>
+            <h4 class="card-title">Engineering & Tech</h4>
+            <p class="card-desc">
+              Computer science, AI, electronics, mechanical, civil, robotics, and advanced semiconductor design.
+            </p>
+            <div class="small text-muted mb-3"><strong>Key Entrance:</strong> JEE Main, MHT-CET</div>
+            <a href="engineering.html" class="primary-btn mt-auto">Open Engineering Guide &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Science -->
+        <div class="col-md-6 col-lg-3">
+          <div class="career-card">
+            <div class="card-icon-lg" style="background: rgba(37, 99, 235, 0.1); color: var(--blue);">
+              <i class="bi bi-atom"></i>
+            </div>
+            <h4 class="card-title">Science & Research</h4>
+            <p class="card-desc">
+              Pure physics, chemistry, mathematics, astrophysics, bioinformatics, and scientific research institutes (IISER/NISER).
+            </p>
+            <div class="small text-muted mb-3"><strong>Key Entrance:</strong> IAT, NEST, CUET</div>
+            <a href="science.html" class="primary-btn mt-auto">Open Science Guide &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Commerce -->
+        <div class="col-md-6 col-lg-3">
+          <div class="career-card">
+            <div class="card-icon-lg" style="background: rgba(16, 185, 129, 0.1); color: var(--success);">
+              <i class="bi bi-cash-stack"></i>
+            </div>
+            <h4 class="card-title">Commerce & Finance</h4>
+            <p class="card-desc">
+              Chartered accountancy, investment banking, taxation, corporate financial planning, and economic consulting.
+            </p>
+            <div class="small text-muted mb-3"><strong>Key Entrance:</strong> CA Foundation, CUET</div>
+            <a href="commerce.html" class="primary-btn mt-auto">Open Commerce Guide &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Arts & Humanities -->
+        <div class="col-md-6 col-lg-3">
+          <div class="career-card">
+            <div class="card-icon-lg" style="background: rgba(245, 158, 11, 0.1); color: var(--warning);">
+              <i class="bi bi-book"></i>
+            </div>
+            <h4 class="card-title">Arts & Humanities</h4>
+            <p class="card-desc">
+              Psychology, journalism, international relations, sociology, history, literature, and UPSC Civil Services.
+            </p>
+            <div class="small text-muted mb-3"><strong>Key Entrance:</strong> CUET, University Tests</div>
+            <a href="arts.html" class="primary-btn mt-auto">Open Arts Guide &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Law -->
+        <div class="col-md-6 col-lg-3">
+          <div class="career-card">
+            <div class="card-icon-lg" style="background: rgba(220, 38, 38, 0.1); color: #DC2626;">
+              <i class="bi bi-bank"></i>
+            </div>
+            <h4 class="card-title">Law & Judiciary</h4>
+            <p class="card-desc">
+              Corporate legal counsel, constitutional litigation, cyber law, arbitration, and civil judicial services.
+            </p>
+            <div class="small text-muted mb-3"><strong>Key Entrance:</strong> CLAT, AILET, SLAT</div>
+            <a href="law.html" class="primary-btn mt-auto">Open Law Guide &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Design -->
+        <div class="col-md-6 col-lg-3">
+          <div class="career-card">
+            <div class="card-icon-lg" style="background: rgba(217, 70, 239, 0.1); color: #D946EF;">
+              <i class="bi bi-palette"></i>
+            </div>
+            <h4 class="card-title">Design & Creative</h4>
+            <p class="card-desc">
+              UI/UX design, product innovation, fashion styling, graphic communication, and multimedia animation.
+            </p>
+            <div class="small text-muted mb-3"><strong>Key Entrance:</strong> NID, NIFT, UCEED</div>
+            <a href="design.html" class="primary-btn mt-auto">Open Design Guide &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Management -->
+        <div class="col-md-6 col-lg-3">
+          <div class="career-card">
+            <div class="card-icon-lg" style="background: rgba(139, 92, 246, 0.1); color: #8B5CF6;">
+              <i class="bi bi-briefcase"></i>
+            </div>
+            <h4 class="card-title">Management & Business</h4>
+            <p class="card-desc">
+              Corporate strategy, startup entrepreneurship, digital product marketing, and integrated 5-year IPM programs at IIMs.
+            </p>
+            <div class="small text-muted mb-3"><strong>Key Entrance:</strong> IPMAT, JIPMAT, CUET</div>
+            <a href="management.html" class="primary-btn mt-auto">Open Management Guide &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== MYTHS VS REALITIES ==================== -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="text-center section-header">
+        <span class="custom-badge"><i class="bi bi-shield-exclamation"></i> Clarity Check</span>
+        <h2 class="section-title mt-2">Career Planning: <span class="gradient-text">Myths vs Realities</span></h2>
+        <p class="section-subtitle">
+          Dispel common societal misconceptions that cause anxiety among Indian high school students.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Myth 1 -->
+        <div class="col-md-6">
+          <div class="card border-0 shadow-sm rounded-4 p-4 bg-white h-100">
+            <div class="d-flex align-items-center gap-2 mb-2 text-danger fw-bold">
+              <i class="bi bi-x-circle-fill"></i> MYTH 1
+            </div>
+            <h5 class="fw-bold text-navy mb-2">"Only Science stream students have successful, high-paying futures."</h5>
+            <div class="d-flex align-items-center gap-2 mb-2 text-success fw-bold">
+              <i class="bi bi-check-circle-fill"></i> REALITY
+            </div>
+            <p class="text-muted mb-0">
+              Corporate lawyers, chartered accountants, product designers, investment bankers, and digital growth executives frequently earn equal or higher starting packages than average engineering graduates. Success is driven by excellence and specialization in your domain.
+            </p>
+          </div>
+        </div>
+
+        <!-- Myth 2 -->
+        <div class="col-md-6">
+          <div class="card border-0 shadow-sm rounded-4 p-4 bg-white h-100">
+            <div class="d-flex align-items-center gap-2 mb-2 text-danger fw-bold">
+              <i class="bi bi-x-circle-fill"></i> MYTH 2
+            </div>
+            <h5 class="fw-bold text-navy mb-2">"If you don't crack an IIT or AIIMS, your career is essentially over."</h5>
+            <div class="d-flex align-items-center gap-2 mb-2 text-success fw-bold">
+              <i class="bi bi-check-circle-fill"></i> REALITY
+            </div>
+            <p class="text-muted mb-0">
+              Top state universities, NITs, BITS, COEP, VJTI, and reputed private institutes offer world-class curricula and strong placement records. Many prominent global leaders, researchers, and entrepreneurs did not graduate from IITs or AIIMS.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FINAL CTA ==================== -->
+  <section class="section-padding bg-white">
+    <div class="container">
+      <div class="cta-banner">
+        <div class="cta-content">
+          <h2 class="cta-title">Ready to Find Your Direction?</h2>
+          <p class="cta-text">
+            Start with our interactive questionnaire and discover tailored careers matching your unique profile.
+          </p>
+          <div class="d-flex flex-wrap justify-content-center gap-3">
+            <a href="ai-assessment.html" class="primary-btn">
+              <i class="bi bi-cpu"></i> Start Assessment
+            </a>
+            <a href="career-explorer.html" class="secondary-btn bg-white text-navy">
+              <i class="bi bi-search"></i> Browse Careers
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <a href="index.html" class="footer-brand">
+            <span class="brand-icon"><i class="bi bi-compass"></i></span>
+            <span>Career<span class="text-cyan">AI</span></span>
+          </a>
+          <p class="footer-desc">
+            Empowering Indian students with clear, unbiased, and structured career guidance across all major streams.
+          </p>
+        </div>
+        <div class="col-lg-2 col-md-3 col-6">
+          <h5 class="footer-heading">Explore</h5>
+          <ul class="footer-links">
+            <li><a href="career-guidance.html">Career Guidance</a></li>
+            <li><a href="career-explorer.html">Career Explorer</a></li>
+            <li><a href="ai-assessment.html">AI Assessment</a></li>
+            <li><a href="resources.html">Resources</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-3 col-6">
+          <h5 class="footer-heading">Exams</h5>
+          <ul class="footer-links">
+            <li><a href="neet.html">NEET (Medical)</a></li>
+            <li><a href="jee.html">JEE (Engineering)</a></li>
+            <li><a href="mhtcet.html">MHT-CET</a></li>
+            <li><a href="law.html">CLAT (Law)</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-3 col-6">
+          <h5 class="footer-heading">Streams</h5>
+          <ul class="footer-links">
+            <li><a href="science.html">Science</a></li>
+            <li><a href="commerce.html">Commerce</a></li>
+            <li><a href="arts.html">Arts</a></li>
+            <li><a href="design.html">Design</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-3 col-6">
+          <h5 class="footer-heading">Company</h5>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Support</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 CareerAI. All rights reserved.</div>
+        <div>Educational exploration platform for Indian students.</div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

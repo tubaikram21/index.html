@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Career Assessment — Discover Your Direction | CareerAI</title>
+  <meta name="description" content="Take our guided career assessment questionnaire to map your academic strengths and subject interests to the right career paths in India.">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <header class="site-header">
+    <nav class="custom-navbar">
+      <a href="index.html" class="nav-brand">
+        <span class="brand-icon"><i class="bi bi-compass"></i></span>
+        <span>Career<span class="gradient-text">AI</span></span>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+        <i class="bi bi-list open-icon"></i>
+        <i class="bi bi-x-lg close-icon"></i>
+      </label>
+
+      <div class="nav-menu">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-item-link">Home</a></li>
+          <li><a href="career-guidance.html" class="nav-item-link">Career Guidance</a></li>
+          <li><a href="neet.html" class="nav-item-link">Exams</a></li>
+          <li><a href="science.html" class="nav-item-link">Streams</a></li>
+          <li><a href="career-explorer.html" class="nav-item-link">Career Explorer</a></li>
+          <li><a href="ai-assessment.html" class="nav-item-link active">AI Assessment</a></li>
+          <li><a href="resources.html" class="nav-item-link">Resources</a></li>
+          <li><a href="about.html" class="nav-item-link">About</a></li>
+        </ul>
+        <div class="nav-auth">
+          <a href="login.html" class="nav-login-btn">Login</a>
+          <a href="signup.html" class="nav-cta-btn">Get Started</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ==================== BREADCRUMB ==================== -->
+  <div class="breadcrumb-wrap">
+    <div class="container">
+      <ul class="breadcrumb-list">
+        <li><a href="index.html"><i class="bi bi-house-door"></i> Home</a></li>
+        <li><i class="bi bi-chevron-right"></i></li>
+        <li class="current">AI Assessment</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="page-hero-banner">
+    <div class="container text-center">
+      <span class="custom-badge badge-cyan mb-3"><i class="bi bi-cpu"></i> GUIDED EVALUATION</span>
+      <h1 class="page-hero-title">Discover Your <span class="gradient-text">Career Interests</span></h1>
+      <p class="page-hero-lead mx-auto">
+        Explore your academic preferences, innate strengths, and personal aspirations to pinpoint career sectors that warrant your deeper research.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==================== ASSESSMENT FORM ==================== -->
+  <main class="section-padding">
+    <div class="container" style="max-width: 900px;">
+
+      <!-- Form navigates cleanly to career explorer without JS -->
+      <form action="career-explorer.html" method="get">
+
+        <!-- Question 1: Subjects -->
+        <div class="assessment-question-box">
+          <div class="question-header">
+            <div class="question-number">Question 01 &bull; Academic Affinity</div>
+            <h2 class="question-text">Which subjects do you enjoy learning the most?</h2>
+            <p class="text-muted small mt-1 mb-0">Select all subjects where you find genuine curiosity and satisfaction.</p>
+          </div>
+
+          <div class="choice-grid">
+            <label class="custom-choice-label">
+              <input type="checkbox" name="subject" value="maths" class="custom-choice-input" checked>
+              <span><i class="bi bi-calculator me-1 text-primary"></i> Mathematics</span>
+            </label>
+
+            <label class="custom-choice-label">
+              <input type="checkbox" name="subject" value="physics" class="custom-choice-input" checked>
+              <span><i class="bi bi-lightning-charge me-1 text-warning"></i> Physics</span>
+            </label>
+
+            <label class="custom-choice-label">
+              <input type="checkbox" name="subject" value="chemistry" class="custom-choice-input">
+              <span><i class="bi bi-droplet me-1 text-info"></i> Chemistry</span>
+            </label>
+
+            <label class="custom-choice-label">
+              <input type="checkbox" name="subject" value="biology" class="custom-choice-input">
+              <span><i class="bi bi-heart-pulse me-1 text-danger"></i> Biology</span>
+            </label>
+
+            <label class="custom-choice-label">
+              <input type="checkbox" name="subject" value="cs" class="custom-choice-input" checked>
+              <span><i class="bi bi-terminal me-1 text-dark"></i> Computer Science</span>
+            </label>
+
+            <label class="custom-choice-label">
+              <input type="checkbox" name="subject" value="economics" class="custom-choice-input">
+              <span><i class="bi bi-graph-up me-1 text-success"></i> Economics</span>
+            </label>
+
+            <label class="custom-choice-label">
+              <input type="checkbox" name="subject" value="accounts" class="custom-choice-input">
+              <span><i class="bi bi-journal-text me-1 text-secondary"></i> Accountancy</span>
+            </label>
+
+            <label class="custom-choice-label">
+              <input type="checkbox" name="subject" value="history" class="custom-choice-input">
+              <span><i class="bi bi-hourglass-split me-1 text-warning"></i> History</span>
+            </label>
+
+            <label class="custom-choice-label">
+              <input type="checkbox" name="subject" value="psychology" class="custom-choice-input">
+              <span><i class="bi bi-person me-1 text-primary"></i> Psychology</span>
+            </label>
+
+            <label class="custom-choice-label">
+              <input type="checkbox" name="subject" value="languages" class="custom-choice-input">
+              <span><i class="bi bi-chat-quote me-1 text-info"></i> Languages & Lit</span>
+            </label>
+
+            <label class="custom-choice-label">
+              <input type="checkbox" name="subject" value="design" class="custom-choice-input">
+              <span><i class="bi bi-palette me-1 text-danger"></i> Art & Design</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Question 2: Activities -->
+        <div class="assessment-question-box">
+          <div class="question-header">
+            <div class="question-number">Question 02 &bull; Daily Work Activities</div>
+            <h2 class="question-text">What activities do you enjoy during projects and free time?</h2>
+            <p class="text-muted small mt-1 mb-0">Select the tasks that energize you rather than drain you.</p>
+          </div>
+
+          <div class="choice-grid">
+            <label class="custom-choice-label">
+              <input type="checkbox" name="activity" value="problem-solving" class="custom-choice-input" checked>
+              <span><i class="bi bi-puzzle me-1 text-primary"></i> Solving logic puzzles</span>
+            </label>
+
+            <label class="custom-choice-label">
+              <input type="checkbox" name="activity" value="helping" class="custom-choice-input">
+              <span><i class="bi bi-emoji-smile me-1 text-success"></i> Helping & advising people</span>
+            </label>
+
+            <label class="custom-choice-label">
+              <input type="checkbox" name="activity" value="designing" class="custom-choice-input">
+              <span><i class="bi bi-brush me-1 text-danger"></i> Designing visuals/sketches</span>
+            </label>
+
+            <label class="custom-choice-label">
+              <input type="checkbox" name="activity" value="writing" class="custom-choice-input">
+              <span><i class="bi bi-pen me-1 text-secondary"></i> Writing essays or stories</span>
+            </label>
+
+            <label class="custom-choice-label">
+              <input type="checkbox" name="activity" value="researching" class="custom-choice-input" checked>
+              <span><i class="bi bi-search me-1 text-info"></i> Researching facts online</span>
+            </label>
+
+            <label class="custom-choice-label">
+              <input type="checkbox" name="activity" value="teaching" class="custom-choice-input">
+              <span><i class="bi bi-easel me-1 text-warning"></i> Teaching or mentoring</span>
+            </label>
+
+            <label class="custom-choice-label">
+              <input type="checkbox" name="activity" value="managing" class="custom-choice-input">
+              <span><i class="bi bi-people me-1 text-dark"></i> Organizing events/teams</span>
+            </label>
+
+            <label class="custom-choice-label">
+              <input type="checkbox" name="activity" value="technology" class="custom-choice-input" checked>
+              <span><i class="bi bi-cpu me-1 text-primary"></i> Tinkering with tech/gadgets</span>
+            </label>
+
+            <label class="custom-choice-label">
+              <input type="checkbox" name="activity" value="creating" class="custom-choice-input">
+              <span><i class="bi bi-hammer me-1 text-secondary"></i> Building physical models</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Question 3: Career Interest Domain -->
+        <div class="assessment-question-box">
+          <div class="question-header">
+            <div class="question-number">Question 03 &bull; Primary Career Domain</div>
+            <h2 class="question-text">Which professional domain naturally interests you most?</h2>
+            <p class="text-muted small mt-1 mb-0">Select your top preference for exploration.</p>
+          </div>
+
+          <div class="choice-grid">
+            <label class="custom-choice-label">
+              <input type="radio" name="domain" value="healthcare" class="custom-choice-input">
+              <span><i class="bi bi-heart-pulse text-danger me-1"></i> Healthcare & Medicine</span>
+            </label>
+
+            <label class="custom-choice-label">
+              <input type="radio" name="domain" value="engineering" class="custom-choice-input" checked>
+              <span><i class="bi bi-gear text-primary me-1"></i> Engineering & Tech</span>
+            </label>
+
+            <label class="custom-choice-label">
+              <input type="radio" name="domain" value="technology" class="custom-choice-input">
+              <span><i class="bi bi-code-slash text-dark me-1"></i> AI & Software</span>
+            </label>
+
+            <label class="custom-choice-label">
+              <input type="radio" name="domain" value="business" class="custom-choice-input">
+              <span><i class="bi bi-briefcase text-info me-1"></i> Business & Startups</span>
+            </label>
+
+            <label class="custom-choice-label">
+              <input type="radio" name="domain" value="finance" class="custom-choice-input">
+              <span><i class="bi bi-currency-rupee text-success me-1"></i> Finance & CA</span>
+            </label>
+
+            <label class="custom-choice-label">
+              <input type="radio" name="domain" value="law" class="custom-choice-input">
+              <span><i class="bi bi-bank text-danger me-1"></i> Law & Public Policy</span>
+            </label>
+
+            <label class="custom-choice-label">
+              <input type="radio" name="domain" value="design" class="custom-choice-input">
+              <span><i class="bi bi-palette text-warning me-1"></i> Design & UI/UX</span>
+            </label>
+
+            <label class="custom-choice-label">
+              <input type="radio" name="domain" value="education" class="custom-choice-input">
+              <span><i class="bi bi-mortarboard text-secondary me-1"></i> Education & Academia</span>
+            </label>
+
+            <label class="custom-choice-label">
+              <input type="radio" name="domain" value="research" class="custom-choice-input">
+              <span><i class="bi bi-atom text-primary me-1"></i> Pure Scientific Research</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Question 4: Career Priorities -->
+        <div class="assessment-question-box">
+          <div class="question-header">
+            <div class="question-number">Question 04 &bull; Life Priorities</div>
+            <h2 class="question-text">What matters most in your ideal future career?</h2>
+            <p class="text-muted small mt-1 mb-0">Select your top priority value.</p>
+          </div>
+
+          <div class="choice-grid">
+            <label class="custom-choice-label">
+              <input type="radio" name="priority" value="innovation" class="custom-choice-input" checked>
+              <span><i class="bi bi-rocket me-1 text-primary"></i> Continuous innovation</span>
+            </label>
+
+            <label class="custom-choice-label">
+              <input type="radio" name="priority" value="social-impact" class="custom-choice-input">
+              <span><i class="bi bi-globe me-1 text-success"></i> Direct impact on society</span>
+            </label>
+
+            <label class="custom-choice-label">
+              <input type="radio" name="priority" value="financial-growth" class="custom-choice-input">
+              <span><i class="bi bi-cash-stack me-1 text-success"></i> High financial upside</span>
+            </label>
+
+            <label class="custom-choice-label">
+              <input type="radio" name="priority" value="job-stability" class="custom-choice-input">
+              <span><i class="bi bi-shield-check me-1 text-info"></i> Long-term stability & safety</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Disclaimer Box -->
+        <div class="disclaimer-box">
+          <i class="bi bi-exclamation-circle-fill"></i>
+          <div>
+            <strong>Educational Disclaimer:</strong> This questionnaire is an exploratory tool intended to spark reflection and discovery. It does not replace professional psychometric testing or individualized counseling with certified educators and parents.
+          </div>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="text-center mt-4">
+          <button type="submit" class="primary-btn px-5 py-3 fs-6">
+            <i class="bi bi-arrow-right-circle-fill"></i> Explore Matching Careers &rarr;
+          </button>
+        </div>
+      </form>
+
+    </div>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <a href="index.html" class="footer-brand">
+            <span class="brand-icon"><i class="bi bi-compass"></i></span>
+            <span>Career<span class="text-cyan">AI</span></span>
+          </a>
+          <p class="footer-desc">
+            Helping students across India discover clarity, choose the right stream, and prepare for competitive exams.
+          </p>
+        </div>
+        <div class="col-lg-2 col-md-3 col-6">
+          <h5 class="footer-heading">Explore</h5>
+          <ul class="footer-links">
+            <li><a href="career-guidance.html">Career Guidance</a></li>
+            <li><a href="career-explorer.html">Career Explorer</a></li>
+            <li><a href="ai-assessment.html">AI Assessment</a></li>
+            <li><a href="resources.html">Resources</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-3 col-6">
+          <h5 class="footer-heading">Exams</h5>
+          <ul class="footer-links">
+            <li><a href="neet.html">NEET (Medical)</a></li>
+            <li><a href="jee.html">JEE (Engineering)</a></li>
+            <li><a href="mhtcet.html">MHT-CET</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-3 col-6">
+          <h5 class="footer-heading">Streams</h5>
+          <ul class="footer-links">
+            <li><a href="science.html">Science</a></li>
+            <li><a href="commerce.html">Commerce</a></li>
+            <li><a href="arts.html">Arts</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-3 col-6">
+          <h5 class="footer-heading">Company</h5>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Support</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 CareerAI. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
